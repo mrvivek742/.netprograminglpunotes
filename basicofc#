@@ -26,3 +26,91 @@ string d = "Gello";
 
 //compare to string 1> srtring 2= 1if string 1<string 2=-1 if string1==string2 0
 Console.WriteLine("the sting after comparision gives"+":"+c.CompareTo(d))
+
+
+Console.WriteLine("the string after using string comapre " + ":" + (string.Compare(c, d)));
+Console.WriteLine("the string after using compare to ordinal " + ": " + (string.CompareOrdinal(c, d)));
+Console.WriteLine("the string after using compare to ordinal " + ": " + (string.Equals (c, d)));
+
+
+//string method for modification
+
+string a = "  HelloToClassRB  ";
+Console.WriteLine("The text of string after trimming is" + ":" + a.Trim());
+Console.WriteLine("The text of string after trimstart is" + ":" + a.TrimStart());
+Console.WriteLine("The text of string after trimend is" + ":" + a.TrimEnd());
+Console.WriteLine("The text of string after replacing the string content is" + ":" + a.Replace("l", "*"));
+
+
+
+
+string a = "Hello";
+string b = "World";
+string c = "good morning";
+
+//string result = string.Concat(a,b);
+//Console.WriteLine(result);
+
+//join providing us a separator
+//string[] a = {"Hello","cable","projection","mic"};
+string result = string.Join("_",a,b,c);
+Console.WriteLine(result);
+
+
+//3 string spilt
+string text = "Hi,I,am,your,Son";
+string[]s = text.Split(',');
+foreach(string s2 in s)
+{
+    Console.WriteLine(s2);
+}
+
+string a = "PaLvT soNI";
+string t = "Interoduction to artificial Intelligence";
+string d = a.ToUpper();
+Console.WriteLine(d);
+Console.WriteLine("first 10 : " + t.Substring(0, 10));
+Console.WriteLine("WELCOME " + d + "-- EVENT:Introduction");*/
+
+
+//COLLECTION IN C#
+//TYPES OF COLLECTION-1.Generic-LIST, DICTIONARY
+//     NON-GENERIC-ARRAY LIST, HASH TABLE
+//     ARRAY-
+//     SPECIALIZED COLLECTION-STACK, QUEUE
+
+List<string> student = new List<string>();
+student.Add("Kunwar");
+student.Add("Jiya");
+student.Add("Chandramauli");
+foreach (string item in student)
+{
+    Console.WriteLine(item);
+}
+student.Remove("Jiya");
+foreach (string item in student)
+{
+    Console.WriteLine(item);
+
+}
+
+//DICTIONARY
+
+//Dictionary<int, string> d = new Dictionary<int, string>();
+//d.Add(1001, "Parinoor");
+//d.Add(1002, "Lakshay");
+//d.Add(1003, "Aditya");
+//d.Add(1004, "Samar");
+//foreach (var i in d)
+//{
+//    Console.WriteLine(i);
+//}
+//foreach (var i in d)
+//{
+//    Console.WriteLine(i.Key + " " + i.Value);
+//}
+
+
+
+
+
