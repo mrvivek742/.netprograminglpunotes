@@ -1,0 +1,28 @@
+/*Console.WriteLine("Hello, World!");
+string a = "   wewillcreateatrevenuebasedproject";
+//1. basic function
+Console.WriteLine("the string in uppercase is "+ " :"+a.ToUpper());
+Console.WriteLine("the string in lowercase is " + " :" + a.ToLower());
+Console.WriteLine("the string length is " + ": " + a.Length);
+
+//Extraction function
+Console.WriteLine("the string after extraction is " + a.Substring(4,12));
+
+Console.WriteLine("the string after removing is "+  a.Remove(4,10));
+
+string b = "kidlydofreelancing";
+Console.WriteLine("the string after removing is " + b.Remove(1, 6));
+
+
+string a = "wewillcreaterevenuebasedprojects";
+Console.WriteLine("this contains functions shows " + ":" + a.Contains("projects"));
+Console.WriteLine("The last idex of " + ":" + a.IndexOf('r'));
+Console.WriteLine("The last idex of " + ":" + a.LastIndexOf('r'));*/
+
+//comparision method of string
+
+string c = "hello";
+string d = "Gello";
+
+//compare to string 1> srtring 2= 1if string 1<string 2=-1 if string1==string2 0
+Console.WriteLine("the sting after comparision gives"+":"+c.CompareTo(d))
