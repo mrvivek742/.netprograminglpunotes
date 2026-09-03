@@ -112,5 +112,98 @@ foreach (string item in student)
 
 
 
+//DICTIONARY
+
+//Dictionary<int, string> d = new Dictionary<int, string>();
+//d.Add(1001, "Parinoor");
+//d.Add(1002, "Lakshay");
+//d.Add(1003, "Aditya");
+//d.Add(1004, "Samar");
+//foreach (var i in d)
+//{
+//    Console.WriteLine(i);
+//}
+//foreach (var i in d)
+//{
+//    Console.WriteLine(i.Key + " " + i.Value);
+//}
+
+
+Dictionary<float, string> d = new Dictionary<float, string>();
+d.Add(100.1f, "Parinoor");
+d.Add(100.2f, "Lakshay");
+d.Add(100.3f, "Aditya");
+d.Add(100.4f, "Samar");
+foreach (var i in d)
+{
+    Console.WriteLine(i);
+}
+foreach (var i in d)
+{
+    Console.WriteLine(i.Key + " " + i.Value); 
+}
+//SPECIALIZED COLLECTION-STACK VS QUEUE
+//Stack=LIFO,PUSH,POP,PEEK
+//    QUEUE-FileNotFoundException,ENQUEUE,DEQUEUE,PEEK
+
+//Queue<int> number = new Queue<int>();
+//number.Enqueue(10);
+//number.Enqueue(100);
+//number.Enqueue(1000);
+
+//Console.WriteLine("The recent item present at queue" + number.Peek());//show recent item;
+//Console.WriteLine("the total item in queue" + number.Count());
+//Console.WriteLine("The dequeue shows" + number.Dequeue());// remove recent and diplay remaining item;
+//foreach (var item in number)
+//{
+//    Console.WriteLine(item);
+
+//stack
+
+Stack<int> number = new Stack<int>();
+number.Push(10);
+number.Push(100);
+number.Push(1000);
+
+Console.WriteLine("The recent item present at queue" + number.Peek());//show recent item;
+Console.WriteLine("the total item in queue" + number.Count());
+Console.WriteLine("The dequeue shows" + number.Pop());// remove recent and diplay remaining item;
+foreach (var item in number)
+{
+    Console.WriteLine(item);
+}
+//non generic collection 
+
+using System.Collections;
+ArrayList l = new ArrayList();
+l.Add("aman");
+l.Add("piyush");
+l.Add("nilesh");
+l.Add(4);
+l.Add(4.5f);
+foreach(var i in l)
+{
+    Console.WriteLine(i);
+}
+l.Remove("aman");
+foreach(var i in l)
+{
+    Console.WriteLine(i);
+}*/
+
+
+//hashtable
+
+using System.Collections;
+Hashtable t = new Hashtable();
+t.Add(101, "goldwin");
+t.Add("101A", "aarunya");
+t.Add('b', "bhavya");
+t.Add(125.5, "pardeep");
+foreach (var i  in t)
+{
+    Console.WriteLine(i);
+}
+
 
 
