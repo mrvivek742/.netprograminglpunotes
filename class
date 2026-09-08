@@ -1,0 +1,25 @@
+class is a blujeprint which can have different object inside it,
+whereas objects are instances of class that can have different attributes
+
+*/
+
+using System;
+class Code
+{
+    string name;
+    int marks;
+    public void Show() //member function
+    {
+        Console.WriteLine("this is used for displaying content");
+        Console.WriteLine($"the name is {name} nad marks is {marks}");
+
+    }
+    public static void Main() // main method inside your class
+    {
+        Code c = new Code(); //class and its object
+        c.name = "palvi"; //value of variable is acess using object
+        c.marks = 90;
+
+        c.Show();//call the method for displaying content
+    }
+}
