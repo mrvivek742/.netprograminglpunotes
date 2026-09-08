@@ -1,0 +1,38 @@
+acess modification
+a. public cna be used anywhere in the project
+b. protected can be used in same class+child
+c. private can used in same class
+d. internal can be used in  same project/assembly
+
+*/
+
+
+using System;
+class Employer
+{
+    public string name = " palvi";
+    private int leaves = 5;
+    protected string jobrole = "faculty";
+    internal string location = "punjab";
+
+}
+class Employee : Employer //child class : parent class
+{
+    public  void show()
+    {
+        Console.WriteLine(name);
+        //Console.WriteLine(leaves);
+        Console.WriteLine(jobrole);
+        Console.WriteLine(location);
+    }
+    public static void Main()
+    {
+        Employee e = new Employee();
+        Console.WriteLine(e.name);
+        //Console.WriteLine(e.leaves);
+        Console.WriteLine(e.jobrole);
+        Console.WriteLine(e.location);
+    }
+}
+
+
