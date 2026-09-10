@@ -1,0 +1,27 @@
+ENCAPSULATION
+it is way of wrapping a data into smaller unit so its details can be hidden 
+*/
+
+using System;
+class Calculator
+{
+    private int result; //declare result variable with private modifiers its can support encapsulation
+    public void Add(int a, int b)
+    {
+        result = a + b;
+
+    }
+    public int show()
+    {
+        return result;
+    }
+}
+class program
+{
+    public static void Main()
+    {
+        Calculator obj = new Calculator();
+        obj.Add(6, 7);
+        Console.WriteLine(obj.show());
+    }
+}
