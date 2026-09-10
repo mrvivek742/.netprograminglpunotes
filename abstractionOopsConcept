@@ -1,0 +1,30 @@
+abstraction oops concept
+it is a way of hiding the interal details of the class
+if we want to hide how the thimngs are implemented
+then abstraction will be used ,it onliy show what to implement
+
+
+*/
+
+using System;
+class code
+{
+    abstract class calculator
+    {
+        public abstract int Add(int a, int b);//anstract method 
+        //abstract doesnot have body and it will only show what to do
+    }
+    class result : calculator
+    {
+        public override int Add(int a,int b)
+        {
+            return a + b;
+        }
+    }
+    public static void Main()
+    {
+        result obj = new result();
+        int k=obj .Add(10,29);
+        Console.WriteLine(k);
+    }
+}
