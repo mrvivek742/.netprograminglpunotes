@@ -1,0 +1,60 @@
+//exceptional  
+
+
+
+try
+{
+    int a = 67;
+    int b = 0;
+    Console.WriteLine(a / b);
+
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+    Console.WriteLine(ex.GetType);
+}
+
+
+
+try
+{
+    int marks = 100;
+    if(marks > 90)
+    {
+        throw new Exception("Invalid data");
+    }
+    else
+    {
+        Console.WriteLine("All sorted");
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+finally
+{
+   
+
+ Console.WriteLine("Code executed");
+}
+
+
+
+
+
+*/
+
+
+using System;
+class Code
+{
+    public static void Main()
+    {
+        File.WriteAllText("Demofilerb.txt", "name:aarunya\n Roll no 15");
+        Console.WriteLine("data created in file demo");
+        Console.WriteLine(Path.GetFullPath("Demofilerb.txt"));
+    }
+}
+
