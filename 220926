@@ -1,0 +1,10 @@
+
+using System;
+class Code
+{
+    public static void Main()
+    {
+        File.WriteAllText("Demofilerb.txt", "name:aarunya\n Roll no 15");
+        Console.WriteLine("data created in file demo");
+        Console.WriteLine(Path.GetFullPath("Demofilerb.txt"));
+    }
