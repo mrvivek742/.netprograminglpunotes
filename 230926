@@ -1,0 +1,40 @@
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string[] students = { "aman", "ansh", "raman", "aayush", "neha", "sneha", "rahul", "kartic", "sunny", "many", "honey", "badshah", "om","ajay" };
+
+      
+        Console.WriteLine("--- Names with length greater than 5 ---");
+        string[] longNames = Array.FindAll(students, name => name.Length > 5);
+        foreach (var name in longNames)
+        {
+            Console.WriteLine(name);
+        }
+        Console.WriteLine();
+
+        Console.WriteLine("--- Names starting with 'a' and ending with 'y' ---");
+        string[] startAEndY = Array.FindAll(students, name => name.StartsWith("a", StringComparison.OrdinalIgnoreCase) && name.EndsWith("y", StringComparison.OrdinalIgnoreCase));
+        foreach (var name in startAEndY)
+        {
+            Console.WriteLine(name);
+        }
+        Console.WriteLine();
+
+        
+        Console.WriteLine("--- Names containing 'A' (Converted to Uppercase & Alphabetical Order) ---");
+
+        string[] upperNames = Array.ConvertAll(students, name => name.ToUpper());
+        string[] containsA = Array.FindAll(upperNames, name => name.Contains("A"));
+        Array.Sort(containsA);
+
+        foreach (var name in containsA)
+        {
+            Console.WriteLine(name);
+        }
+    }
+}
+
