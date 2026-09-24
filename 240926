@@ -1,0 +1,59 @@
+using System;
+
+class payment
+{
+    // Delegate
+    delegate void paymentDetails(double amount);
+
+    public void CreditCard(double amount)
+    {
+        Console.WriteLine("The payment of rupees " + amount + " is done via credit card");
+    }
+
+    public void Payment(double amount)
+    {
+        Console.WriteLine("The payment of rupees " + amount + " is done by cash");
+    }
+
+    public void UPI(double amount)
+    {
+        Console.WriteLine("The payment of rupees " + amount + " is done by UPI");
+    }
+
+    public static void Main()
+    {
+        payment p = new payment();
+
+        paymentDetails d;
+
+        Console.WriteLine("Please select your choice");
+        Console.WriteLine("1. Press 1 for Credit Card");
+        Console.WriteLine("2. Press 2 for Cash");
+        Console.WriteLine("3. Press 3 for UPI");
+
+        int choice = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter amount: ");
+        double amount = Convert.ToDouble(Console.ReadLine());
+
+        if (choice == 1)
+        {
+            d = p.CreditCard;
+            d(amount);
+        }
+        else if (choice == 2)
+        {
+            d = p.Payment;
+            d(amount);
+        }
+        else if (choice == 3)
+        {
+            d = p.UPI;
+            d(amount);
+        }
+        else
+        {
+            Console.WriteLine("Invalid choice");
+        }
+    }
+}
