@@ -1,0 +1,27 @@
+
+<table border="3" cellspacing="15" cellpadding="10" > 
+    <tr style="background-color:pink; font-size: 30px">
+        <th>S.NO</th>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+    </tr>
+    <tr>
+        <th>1</th>
+        <th>vivek</th>
+        <th>HTML</th>
+        <th>99</th>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>piyush</th>
+        <th>JAva</th>
+        <th>98</th>
+    </tr>
+    <tr>
+        <th>3</th>
+        <th>Rakesj</th>
+        <th>HTML</th>
+        <th>96</th>
+    </tr>
+</table>
