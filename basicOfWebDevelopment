@@ -1,0 +1,29 @@
+<style>
+    #one {
+        color:darkred;
+    }
+    #two{
+        background-color:grey;
+    }
+    #three{
+        color:coral;
+    }
+    .code{
+        color:mediumpurple;
+        font-family:'Agency FB';
+        background-color:skyblue;
+    }
+</style>
+<h1 style="color:red" >Introduction to basic HTML inside the view</h1>
+<h2 class="code">this is first lecture of html and css </h2>
+<h3 class="code">We are learning web dwsining </h3>
+<h4 class="code">it is quit easy</h4>
+<h6 class="code">lets start</h6>
+<div>
+    <section>
+        <h2> Names of the student</h2>
+    </section>
+    <p id="one">PIyush</p>
+    <p id="two">lalit</p>
+    <p id="three">aman</p>
+</div>
