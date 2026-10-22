@@ -1,0 +1,42 @@
+
+this view file and we have stated razor view engine here
+it allows us to write both html/css and c sharp codes-so it is 
+
+
+
+<h1>lets Start Razor view and Rozar syntax</h1>
+@{
+    string name = "palvi";
+
+}
+<p> The name is @name</p>
+
+<p>Lets use operator and operand</p>
+@{
+    int a = 60;
+    int b = 40;
+}
+<h1>The sum is @(a+b) </h1>
+
+
+
+<div>Lets start loops</div>
+@for(int i = 0; i <= 10; i++)
+{
+    <p>@i</p>
+}
+*@
+
+<p>Checking result</p>
+@{
+    int result = 10;
+
+}
+@if (result >= 33)
+{
+    <p style="background-color:green">student is pass in this eaxm</p>
+}
+else
+{
+    <p style="border-color:red" > student is fail</p>
+}
